@@ -1,0 +1,25 @@
+@if(isDone()){
+<ng-content></ng-content>
+}@else{
+
+<div class="box">
+  <div class="value">{{ days() }}</div>
+  <div class="key">Tage</div>
+</div>
+
+<div class="box">
+  <div class="value">{{ hours() }}</div>
+  <div class="key">Stunden</div>
+</div>
+
+<div class="box">
+  <div class="value">{{ minutes() }}</div>
+  <div class="key">Minuten</div>
+</div>
+
+<div class="box">
+  <div class="value">{{ seconds() }}</div>
+  <div class="key">Sekunden</div>
+</div>
+
+}
