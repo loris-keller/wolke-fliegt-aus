@@ -30,4 +30,6 @@ jobs:
           git config --global user.name "github-actions[bot]"
 
       - name: Deploy to GitHub Pages
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: npx angular-cli-ghpages --dir=dist/wolke-fliegt-aus/browser --no-silent
