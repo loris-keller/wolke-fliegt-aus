@@ -24,5 +24,10 @@ jobs:
       - name: Build Angular app
         run: npm run build -- --configuration production
 
+      - name: Configure Git user
+        run: |
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
+
       - name: Deploy to GitHub Pages
         run: npx angular-cli-ghpages --dir=dist/wolke-fliegt-aus/browser --no-silent
