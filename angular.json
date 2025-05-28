@@ -21,7 +21,7 @@
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "outputPath": "dist/wolke-fliegt-aus",
-            "baseHref": "/wolke-fliegt-aus/",
+            "baseHref": "/",
             "assets": [
               {
                 "glob": "**/*",
