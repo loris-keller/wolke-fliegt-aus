@@ -24,6 +24,9 @@ jobs:
       - name: Build Angular app
         run: npm run build -- --configuration production
 
+      - name: Copy index.html to 404.html
+        run: cp dist/wolke-fliegt-aus/browser/index.html dist/wolke-fliegt-aus/browser/404.html
+
       - name: Configure Git user
         run: |
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
