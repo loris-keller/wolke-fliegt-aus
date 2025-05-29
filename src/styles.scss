@@ -5,3 +5,35 @@ app-root {
   margin: 0;
   padding: 0;
 }
+
+@font-face {
+  font-family: "Chewy";
+  src: url("../public/fonts/Chewy-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gorditas";
+  src: url("../public/fonts/Gorditas-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gorditas";
+  src: url("../public/fonts/Gorditas-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+app-root {
+  font-size: 18px;
+  font-family: "Gorditas", "Consolas", monospace;
+
+  h1 {
+    font-size: 2.5em;
+    font-family: "Chewy", "Consolas", monospace;
+    text-align: center;
+  }
+}
