@@ -30,6 +30,6 @@ export class Navigator {
   protected readonly values: Signal<DatePage[]> = computed(() => {
     const now = this.now();
 
-    return DATE_PAGE_MAP.filter((value: DatePage) => value.date >= now);
+    return DATE_PAGE_MAP.filter((value: DatePage) => value.date != now);
   });
 }
