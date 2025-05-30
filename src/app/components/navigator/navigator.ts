@@ -2,7 +2,7 @@ import { DatePipe } from '@angular/common';
 import { Component, computed, effect, Signal, signal } from '@angular/core';
 import { MatListModule } from '@angular/material/list';
 import { RouterLink } from '@angular/router';
-import { DATE_PAGE_MAP, DatePage } from '../../timer.constants';
+import { DATE_PAGE_MAP, DatePage } from '../../app.constants';
 
 const timeoutSecond = 1000;
 const timeoutMinute = timeoutSecond * 60;

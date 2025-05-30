@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
+import { PACKLISTE_DATE } from '../../app.constants';
 import { Timer } from '../../components/timer/timer';
-import { PACKLISTE_DATE } from '../../timer.constants';
 
 @Component({
   selector: 'app-packliste',

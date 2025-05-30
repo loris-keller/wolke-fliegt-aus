@@ -19,7 +19,7 @@ export class Timer {
   readonly date: InputSignal<Date> = input.required<Date>();
 
   readonly isDone = computed(() => {
-    return this.now() >= this.date();
+    return this.now() <= this.date();
   });
 
   constructor() {

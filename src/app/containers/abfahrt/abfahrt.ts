@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
+import { ABFAHRT_DATE } from '../../app.constants';
 import { Timer } from '../../components/timer/timer';
-import { ABFAHRT_DATE } from '../../timer.constants';
 
 @Component({
   selector: 'app-abfahrt',

@@ -8,7 +8,7 @@ export const OPTION_SPORTLICH_DATE = new Date('2025-07-27T10:00:00.000Z');
 export const OPTION_GNUESSER_DATE = new Date('2025-07-27T10:00:00.000Z');
 export const HOTEL_DATE = new Date('2025-07-27T10:00:00.000Z');
 export const TIPPS_TRICKS_DATE = new Date('2025-07-27T10:00:00.000Z');
-export const HEIWEH_DATE = new Date('2025-07-27T10:00:00.000Z');
+export const HEIMWEH_DATE = new Date('2025-07-27T10:00:00.000Z');
 export const MORITZ_DATE = new Date('2025-07-27T10:00:00.000Z');
 export const NATASCIA_LORIS_DATE = new Date('2025-07-27T10:00:00.000Z');
 export const BEATRICE_THOMAS_DATE = new Date('2025-07-27T10:00:00.000Z');
@@ -36,7 +36,7 @@ export const DATE_PAGE_MAP: readonly DatePage[] = [
   },
   { date: HOTEL_DATE, name: 'Hotel', path: 'hotel' },
   { date: TIPPS_TRICKS_DATE, name: 'Tipps und Tricks', path: 'tipps-tricks' },
-  { date: HEIWEH_DATE, name: 'Heimweh', path: 'heimweh' },
+  { date: HEIMWEH_DATE, name: 'Heimweh', path: 'heimweh' },
   { date: MORITZ_DATE, name: 'Moritz', path: 'moritz' },
   {
     date: NATASCIA_LORIS_DATE,

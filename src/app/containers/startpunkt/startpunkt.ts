@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
+import { STARTPUNKT_DATE } from '../../app.constants';
 import { Timer } from '../../components/timer/timer';
-import { STARTPUNKT_DATE } from '../../timer.constants';
 
 @Component({
   selector: 'app-startpunkt',
