@@ -20,6 +20,8 @@ export class App {
   protected title = 'wolke-fliegt-aus';
 
   protected openNavigator(): void {
-    this.bottomSheet.open(Navigator, { maxHeight: 400 });
+    this.bottomSheet.open(Navigator, {
+      maxHeight: 400,
+    });
   }
 }

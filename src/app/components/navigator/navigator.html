@@ -2,7 +2,7 @@
   @if(values().length === 0) {
   <span>Leider gits no nix z gseh 😴</span>
   } @else { @for (value of values(); track value.path) {
-  <a mat-list-item [routerLink]="value.path">
+  <a mat-list-item (click)="navigateTo(value)">
     <span matListItemTitle>{{ value.name }}</span>
     <span matLine>{{ value.date | date: 'dd MMM HH:mm' }}</span>
   </a>

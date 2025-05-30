@@ -1,7 +1,15 @@
 import { DatePipe } from '@angular/common';
-import { Component, computed, effect, Signal, signal } from '@angular/core';
+import {
+  Component,
+  computed,
+  effect,
+  inject,
+  Signal,
+  signal,
+} from '@angular/core';
+import { MatBottomSheetRef } from '@angular/material/bottom-sheet';
 import { MatListModule } from '@angular/material/list';
-import { RouterLink } from '@angular/router';
+import { Router } from '@angular/router';
 import { DATE_PAGE_MAP, DatePage } from '../../app.constants';
 
 const timeoutSecond = 1000;
@@ -10,12 +18,15 @@ const timeoutInterval = timeoutMinute * 5; // 5 minutes
 
 @Component({
   selector: 'app-navigator',
-  imports: [MatListModule, DatePipe, RouterLink],
+  imports: [MatListModule, DatePipe],
   templateUrl: './navigator.html',
   styleUrl: './navigator.scss',
 })
 export class Navigator {
   private readonly now = signal<Date>(new Date());
+
+  private readonly router = inject(Router);
+  private readonly bottomSheetRef = inject(MatBottomSheetRef);
 
   constructor() {
     effect(() => {
@@ -30,6 +41,11 @@ export class Navigator {
   protected readonly values: Signal<DatePage[]> = computed(() => {
     const now = this.now();
 
-    return DATE_PAGE_MAP.filter((value: DatePage) => value.date != now);
+    return DATE_PAGE_MAP.filter((value: DatePage) => value.date <= now);
   });
+
+  protected navigateTo(value: DatePage): void {
+    this.router.navigate([value.path]);
+    this.bottomSheetRef.dismiss();
+  }
 }
