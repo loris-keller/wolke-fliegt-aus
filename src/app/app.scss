@@ -1,13 +1,21 @@
 :host {
-  display: flex;
-  flex-direction: column;
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: relative;
 }
 
 main {
-  padding: 0 2em;
-  flex: 1;
+  height: 100%;
+  width: 100%;
   background-image: url("/cloud.png");
   background-size: cover;
   display: flex;
   flex-direction: column;
+}
+
+nav {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
 }
