@@ -1,6 +1,6 @@
 <mat-nav-list>
   @if(values().length === 0) {
-  <span>Leider gits no nix z gseh 😴</span>
+  <span class="empty">Leider gits no nix z gseh 😴</span>
   } @else { @for (value of values(); track value.path) {
   <a mat-list-item (click)="navigateTo(value)">
     <span matListItemTitle>{{ value.name }}</span>
