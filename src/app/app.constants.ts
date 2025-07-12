@@ -1,17 +1,17 @@
-export const PACKLISTE_DATE = new Date('2025-07-25T17:00:00+02:00');
-export const STARTPUNKT_DATE = new Date('2025-07-25T17:05:00+02:00');
-export const PANIK_DATE = new Date('2025-07-25T17:10:00+02:00');
-export const ABFAHRT_DATE = new Date('2025-07-25T17:15:00+02:00');
-export const UMSTIEG_DATE = new Date('2025-07-25T17:20:00+02:00');
-export const ENDBAHNHOF_DATE = new Date('2025-07-25T17:25:00+02:00');
-export const OPTION_SPORTLICH_DATE = new Date('2025-07-25T17:30:00+02:00');
-export const OPTION_GNUESSER_DATE = new Date('2025-07-25T17:30:00+02:00');
-export const HOTEL_DATE = new Date('2025-07-25T17:35:00+02:00');
-export const TIPPS_TRICKS_DATE = new Date('2025-07-25T17:40:00+02:00');
-export const HEIMWEH_DATE = new Date('2025-07-25T17:50:00+02:00');
-export const MORITZ_DATE = new Date('2025-07-25T17:55:00+02:00');
-export const NATASCIA_LORIS_DATE = new Date('2025-07-25T17:55:00+02:00');
-export const BEATRICE_THOMAS_DATE = new Date('2025-07-25T17:55:00+02:00');
+export const PACKLISTE_DATE = new Date('2025-08-07T15:00:00+02:00');
+export const STARTPUNKT_DATE = new Date('2025-08-07T16:00:00+02:00');
+export const PANIK_DATE = new Date('2025-08-07T16:15:00+02:00');
+export const ABFAHRT_DATE = new Date('2025-08-08T12:15:00+02:00');
+export const UMSTIEG_DATE = new Date('2025-08-08T13:15:00+02:00');
+export const ENDBAHNHOF_DATE = new Date('2025-08-08T14:40:00+02:00');
+export const OPTION_SPORTLICH_DATE = new Date('2025-08-08T14:45:00+02:00');
+export const OPTION_GNUESSER_DATE = new Date('2025-08-08T14:50:00+02:00');
+export const HOTEL_DATE = new Date('2025-08-08T15:42:00+02:00');
+export const TIPPS_TRICKS_DATE = new Date('2025-08-08T16:00:00+02:00');
+export const HEIMWEH_DATE = new Date('2025-08-10T16:12:34+02:00');
+export const MORITZ_DATE = new Date('2025-08-11T11:11:11+02:00');
+export const NATASCIA_LORIS_DATE = new Date('2025-08-11T11:22:22+02:00');
+export const BEATRICE_THOMAS_DATE = new Date('2025-08-11T11:33:33+02:00');
 
 export type Page = { name: string; path: string };
 
