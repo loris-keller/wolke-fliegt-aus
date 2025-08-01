@@ -4,4 +4,13 @@
   align-items: center;
   justify-content: center;
   padding: 32px;
+
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5),
+      0 0 30px rgba(212, 175, 55, 0.15);
+    border-radius: 8px;
+  }
 }
